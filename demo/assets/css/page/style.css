@@ -1,0 +1,119 @@
+/********************************************************************************
+File        : styles.css
+Author      : Steve Beauvais
+Date        : 2014-12-11
+Description : Common styles for this application
+********************************************************************************/
+/*csslint overqualified-elements: false*/
+body {
+  font-family: arial,sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 25px;
+  padding-top: 50px;
+}
+.navbar-inverse {
+  color: #fff;
+  background-color: #036ca5;
+  background-image:
+  linear-gradient(#036ca5, #00466c);
+}
+.base-page {
+  padding: 40px 15px;
+  text-align: center;
+}
+.clear-fix {
+  clear: both;
+}
+.example {
+  width: 75%;
+  display: block;
+  margin: 60px auto;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-box-shadow: 1px 1px 5px 1px #cacaca;
+  -moz-box-shadow: 1px 1px 5px 1px #cacaca;
+  box-shadow: 1px 1px 5px 1px #cacaca;
+}
+.box-top {
+  color: #fcfcfc;
+  border: 1px solid #036ca5;
+  background-image: -moz-linear-gradient(top,  #036ca5 0%, #00466c 100%); /* Firefox */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #036ca5), color-stop(100%, #00466c)); /* Safari/Chrome - Old WebKit */
+  background-image: -webkit-linear-gradient(top,  #036ca5 0%, #00466c 100%); /* Safari/Chrome */
+  background-image: -ms-linear-gradient(top,  #036ca5 0%, #00466c 100%); /* IE */
+  background-image: -o-linear-gradient(top,  #036ca5 0%, #00466c 100%); /* Oprea */
+  background-image: linear-gradient(top,  #036ca5 0%, #00466c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#036ca5', endColorstr='#00466c', GradientType=0 );
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.box-top ul {
+  text-align: left;
+}
+.box-bottom {
+  background-color: #eaeaea;
+  border: 1px solid #cacaca;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+.coffeeOrder1,
+.coffeeOrder2,
+.coffeeOrder3,
+.coffeeOrder4,
+.coffeeOrder5,
+.coffeeOrder6,
+.coffeeOrder7 {
+  background-image: -moz-linear-gradient(130deg,  #ffffff 55%, #e5f0f6 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(55%, #ffffff), color-stop(100%, #e5f0f6));
+  background-image: -webkit-linear-gradient(130deg,  #ffffff 55%, #e5f0f6 100%);
+  background-image: -ms-linear-gradient(130deg,  #ffffff 55%, #e5f0f6 100%);
+  background-image: -o-linear-gradient(130deg,  #ffffff 55%, #e5f0f6 100%);
+  background-image: linear-gradient(130deg,  #ffffff 55%, #e5f0f6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5f0f6', GradientType=1 );
+  padding: 4px;
+}
+.tabs {
+  padding: 0;
+  background: none;
+  border-width: 0;
+}
+.tabs .ui-tabs-nav {
+  padding-left: 0;
+  background: transparent;
+  border-width: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.tabs .ui-tabs-panel {
+  border-color: #cccccc;
+  border-width: 0 1px 1px 1px;
+  -webkit-box-shadow: 0 -1px 0 0 #cccccc;
+  -moz-box-shadow: 0 -1px 0 0 #cccccc;
+  box-shadow: 0 -1px 0 0 #cccccc;
+  background-image: -moz-linear-gradient(130deg,  #ffffff 55%, #e5f0f6 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(55%, #ffffff), color-stop(100%, #e5f0f6));
+  background-image: -webkit-linear-gradient(130deg,  #ffffff 55%, #e5f0f6 100%);
+  background-image: -ms-linear-gradient(130deg,  #ffffff 55%, #e5f0f6 100%);
+  background-image: -o-linear-gradient(130deg,  #ffffff 55%, #e5f0f6 100%);
+  background-image: linear-gradient(130deg,  #ffffff 55%, #e5f0f6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5f0f6', GradientType=1 );
+}
+.ui-corner-top {
+  -webkit-box-shadow: 0 -1px 0 0 #cccccc;
+  -moz-box-shadow: 0 -1px 0 0 #cccccc;
+  box-shadow: 0 -1px 0 0 #cccccc;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}

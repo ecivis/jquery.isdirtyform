@@ -1,0 +1,298 @@
+/********************************************************************************
+ * File Name:		gn_bootstrap.css
+ * Author:			Steve.Beauvais
+ * Date Created:	07-24-2013
+ * Description:		Grants Network Bootstrap Style Sheet Overrides
+ * Notes:			Bootstrap overrides to retain same look/feel as GN
+ ********************************************************************************/
+html {
+    min-height: 100%;
+    padding: 0 0 1px;
+}
+body {
+    background: none repeat scroll 0 0 #00466C;
+    color: #4B4B4B;
+    font-family: arial,sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    min-width: 990px;
+    padding: 81px 0 0;
+    position: relative;
+    text-align: center;
+    z-index: 10;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+h1, .h1 {
+    color: #4B4B4B;
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0 0 10px;
+}
+h2, .h2 {
+    color: #4B4B4B;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 0 5px;
+}
+h3, .h3 {
+    color: #4B4B4B;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0 0 15px;
+}
+h4, .h4 {
+    color: #4B4B4B;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0 0 7px;
+}
+h5, .h5 {
+    color: #4B4B4B;
+    font-size: 11px;
+    line-height: 13px;
+    margin: 0 0 5px;
+}
+h6, .h6 {
+    color: #4B4B4B;
+    font-size: 10px;
+    line-height: 12px;
+    margin: 0 0 5px;
+}
+sub, sup {
+    font-size: 50%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+.btn {
+	color: #036AA2;
+}
+.btn:focus {
+    outline: none;
+}
+.btn span {
+	height: 21px;
+    line-height: 1.1em;
+	padding: 1px 10px 1px 10px;
+	width: 100%;
+}
+.btn2.btn2b span {
+	padding-top: 10px !important;
+}
+.component-box .close {
+	color: #000000;
+    float: right;
+    font-size: 12px;
+    font-weight: normal;
+	opacity: 1;
+	text-shadow: none;
+}
+.close:hover,
+.close:focus {
+    cursor: default !important;
+    filter: alpha(opacity=90) !important;
+}
+label,
+input,
+button,
+select,
+textarea {
+    font-size: 12px;
+	font-weight: normal;
+    line-height: 1.2em;
+}
+.table .list-inline {
+	padding: 4px;
+}
+.table .list-inline a span.icon {
+	padding: 0 0 0 14px;
+}
+.table .list-inline label {
+	margin: 0;
+}
+.radio.list-inline label {
+	margin: 0 4px 0 0;
+}
+.radio.list-inline input[type="radio"] {
+    margin: 7px 4px 0 0;
+}
+.tbl-dotted label.floatleft {
+    margin: 3px 8px 0 0 !important;
+}
+.tbl-dotted .icon {
+    top: -1px !important;
+}
+.tbl-list label {
+	display: inline;
+	margin: 8px 0 0 6px !important;
+	padding: 2px 0 0 0 !important;
+	vertical-align: middle !important;
+}
+.pagination {
+    margin: 0;
+}
+.table thead tr th,
+.table thead tr th label {
+    font-weight: bold;
+}
+.smallMsg {
+	font-size: smaller;
+	font-weight: normal;
+	padding-left: 4px;
+}
+.radio.inline, .checkbox.inline {
+    padding-top: 0 !important;
+    vertical-align: middle;
+}
+input[type="radio"] {
+	margin-top: 0 !important;
+}
+.radio, .checkbox {
+    min-height: 10px !important;
+}
+.nolink {
+	text-decoration: none;
+}
+.ui-widget-content a.nolink {
+    color: #0088CC;
+}
+.icon-green {
+	color: #008000;
+}
+.icon-blue {
+	color: #0000FF;
+}
+.icon-gray {
+	color: #808080;
+}
+.icon-gold {
+	color: #FFD700;
+}
+.icon-red {
+	color: #FF0000;
+}
+.titleRow {
+    background: none repeat scroll 0 0 #CACACA;
+    font-weight: normal;
+    padding: 10px;
+    text-align: left;
+    vertical-align: bottom;
+}
+.clientLogo {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.select-move6 .controls-last.group-controls-last {
+	height: 290px !important;
+}
+input[type="radio"], input[type="checkbox"] {
+    line-height: normal;
+    margin: 0 10px 2px 0;
+}
+.tbl-dotted label.floatleft {
+    margin: 0 8px 0 0 !important;
+}
+
+th.sort a [class^="icon-"], a [class*=" icon-"] {
+    display: inline-block !important;
+}
+.table .list-inline a span.icon {
+    padding: 0;
+}
+th.sort a .icon-sort {
+    margin: 0 0 0 4px;
+}
+a, :focus {
+   outline: none;
+}
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="radio"]::-moz-focus-inner,
+input[type="checkbox"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: none;
+}
+li {
+    line-height: 16px;
+}
+.textTop {
+	vertical-align: top;
+}
+.textMiddle {
+	vertical-align: middle;
+}
+span[class^="icon-"], span[class*=" icon-"] {
+	font-family: Arial,sans-serif;
+}
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+    font-size: 12px;
+	margin-bottom: 0;
+	padding: 6px 6px 4px 6px;
+}
+.font-reg {
+	font-weight: normal !important;
+}
+.iconOnly {
+	padding: 4px;
+}
+.empty {
+	color: gray;
+}
+.multiple {
+	padding: 6px 6px 4px 6px !important;
+}
+#startDate option,
+#endDate option {
+	color: #000;
+}
+.ui-datepicker .ui-datepicker-title select {
+    font-size: 0.8em;
+}
+select .cust-select {
+	margin: 0;
+}
+select:focus, input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+    outline: none;
+}
+.close {
+ 	filter: alpha(opacity=90) !important;
+ 	font-size: 1em !important;
+ }
+ /*
+.noPrint {
+	display: none !important;
+}
+*/
+.msie7 .printOnly,
+.msie8 .printOnly,
+.msie9 .printOnly {
+	display: none;
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-family: Arial,sans-serif;
+    font-size: 11px;
+}
