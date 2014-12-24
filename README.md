@@ -86,7 +86,7 @@ $(function() {
 	
     /*
     *  Dirtyness Change Events
-    *  Are-You-Sure fires off "dirty" and "clean" events when the form's state
+    *  isDirtyForm fires off "dirty" and "clean" events when the form's state
     *  changes. You can bind() or on(), these events to implement your own form
     *  state logic.  A good example is enabling/disabling a Save button.
     *
@@ -111,7 +111,7 @@ $(function() {
 
     /*
     *  If you're dynamically adding new fields/inputs, and would like to track 
-    *  their state, trigger Are-You-Sure to rescan the form like this:
+    *  their state, trigger isDirtyForm to rescan the form like this:
     */
     $("#my-form").trigger("rescan.isDirtyForm");
 
@@ -134,7 +134,7 @@ $(function() {
     
     /*
     *  Sometimes you may have advanced forms that change their state via
-    *  custom JavaScript or 3rd-party component JavaScript. Are-You-Sure may 
+    *  custom JavaScript or 3rd-party component JavaScript. isDirtyForm may 
     *  not automatically detect these state changes. Examples include:
     *     - Updating a hidden input field via background JS.
     *     - Using a rich WYSIWYG edit control.
