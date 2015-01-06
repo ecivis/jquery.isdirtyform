@@ -11,6 +11,25 @@ $(function () {
 
     $("a[rel=external]").attr("target", "_blank");
 
+    // Example 8 - Tabs
+    $("#tabs").tabs();
+
+    if ($(".tab-set") && document.location.hash) {
+        $.scrollTo(".tab-set");
+    }
+
+    $(".tab-set ul").localScroll({
+        target: ".tab-set",
+        duration: 0,
+        hash: true
+    });
+
+    $("#example-8a-form, #example-8b-form, #example-8c-form").isDirtyForm({
+        "message": "Your changes will be lost without saving. Are you sure you want to leave",
+        // "debug": true,
+        "tabs": true
+    });
+
     // Example 1 - ... in one line of code
     // $("#example-1-form").isDirtyForm();
     $("#example-1-form").isDirtyForm({
@@ -154,24 +173,5 @@ $(function () {
     $("#example-7-form").on("clean.isDirtyFor", function () {
         // Form is clean so nothing to save - disable the save button.
         $("#example-7-save-button").attr({"disabled": true});
-    });
-
-    // Example 8 - Tabs
-    $("#tabs").tabs();
-
-    if ($(".tab-set") && document.location.hash) {
-        $.scrollTo(".tab-set");
-    }
-
-    $(".tab-set ul").localScroll({
-        target: ".tab-set",
-        duration: 0,
-        hash: true
-    });
-
-    $("#example-8a-form, #example-8b-form, #example-8c-form").isDirtyForm({
-        "message": "Your changes will be lost without saving. Are you sure you want to leave",
-        // "debug": true,
-        "tabs": true
     });
 });

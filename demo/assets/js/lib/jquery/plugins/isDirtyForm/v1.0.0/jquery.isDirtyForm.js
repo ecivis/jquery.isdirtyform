@@ -45,12 +45,12 @@
                 "addRemoveFieldsMarksDirty": false,
                 "fieldEvents": "change keyup propertychange input",
                 "fieldSelector": ":input:not(input[type=submit]):not(input[type=button])",
-                "tabs": false,
-                "debug": false
+                "debug": false,
+                "tabs": false
             }, options);
 
         /**
-         * Get the field ID and name for debugging purposes - uncomment for usage
+         * Get the field ID and name for debugging purposes
          * @param  {String} $field Field
          * @return {String}        Field ID and name
          */
@@ -361,6 +361,9 @@
                     event.preventDefault();
                     if ($(this).hasClass("idf-ignore") || $(this).hasClass("idfIgnore") || $(this).attr("data-idf-ignore")) {
                         return null;
+                    }
+                    if (settings.debug) {
+                        console.log("Tab or Anchor Link Clicked");
                     }
                     $dirtyFormField = $("form").filter("." + settings.dirtyClass);
                     if ($dirtyFormField === undefined || $dirtyFormField.length === 0) {
