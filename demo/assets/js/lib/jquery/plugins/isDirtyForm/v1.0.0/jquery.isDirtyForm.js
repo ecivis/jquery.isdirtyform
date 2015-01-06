@@ -356,7 +356,8 @@
          */
         if (!settings.silent && !window.idfUnloadSet) {
             if (settings.tabs) {
-                $(".tab-links span span, a").on("click", function (event) {
+                // $(".tab-links span span, a").on("click", function (event) {
+                $(".tab-links span span").on("click", function (event) {
                     var message, leave;
                     event.preventDefault();
                     if ($(this).hasClass("idf-ignore") || $(this).hasClass("idfIgnore") || $(this).attr("data-idf-ignore")) {
