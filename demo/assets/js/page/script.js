@@ -9,6 +9,8 @@
 $(function () {
     "use strict";
 
+    $("a[rel=external]").attr("target", "_blank");
+
     // Example 1 - ... in one line of code
     // $("#example-1-form").isDirtyForm();
     $("#example-1-form").isDirtyForm({
