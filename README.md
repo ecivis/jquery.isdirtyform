@@ -5,11 +5,11 @@ Dirty Form Detection
 
 **Version:** 1.0
 
-*isDirtyForm* (```jquery.isDirtyForm.js```) is a "dirty 
-form" jQuery Plugin for modern browsers.  It helps prevent users from losing 
+*isDirtyForm* (```jquery.isDirtyForm.js```) is a "dirty
+form" jQuery Plugin for modern browsers.  It helps prevent users from losing
 unsaved form changes by promoting the user to save/submit.
 
-It's simple to use.  Just add the following line to your page's JavaScript ready 
+It's simple to use.  Just add the following line to your page's JavaScript ready
 function:
 
 ```JavaScript
@@ -27,9 +27,9 @@ can be used with jQuery-UI Tabs. *isDirtyForm* was based off of  [jquery.Are-You
  * Uses jQuery click event detection for jQuery-UI Tab forms when the *tabs* setting is set to true.
  * Displays console log details for debugging when the *debug* setting is set to true.
  * Works on forms of any size.
- * Correct state management - if a user edits then restores a value, the form 
+ * Correct state management - if a user edits then restores a value, the form
    is not considered dirty.
- * Graceful degradation on legacy browsers (i.e. if you're running an old 
+ * Graceful degradation on legacy browsers (i.e. if you're running an old
    browser... remember to save :-)
 
 ###Basic Usage
@@ -46,7 +46,7 @@ $(function() {
 
     // With a custom message
     $("form").isDirtyForm({"message": "Your changes will be lost without saving. Are you sure you want to leave?"});
-	
+
 	// With debugging enabled, using jQuery-UI tabs and a custom message
     $("form").isDirtyForm({
 		"debug": true,
@@ -56,7 +56,7 @@ $(function() {
 
 }
 ```
-To ignore selected fields from the dirtyness check: 
+To ignore selected fields from the dirtyness check:
 
 ```html
   <form id="myForm" name="myform" action="/post" method="post">
@@ -77,13 +77,13 @@ To ignore selected fields from the dirtyness check:
 $(function() {
 
     /*
-    *  Make isDirtyForm "silent" by disabling the warning message 
-    *  (tracking/monitoring only mode). This option is useful when you wish to 
-    *  use the dirty/save events and/or use the dirtyness tracking in your own 
+    *  Make isDirtyForm "silent" by disabling the warning message
+    *  (tracking/monitoring only mode). This option is useful when you wish to
+    *  use the dirty/save events and/or use the dirtyness tracking in your own
     *  beforeunload handler.
     */
     $("form").isDirtyForm( {"silent":true} );
-	
+
     /*
     *  Dirtyness Change Events
     *  isDirtyForm fires off "dirty" and "clean" events when the form's state
@@ -110,13 +110,13 @@ $(function() {
     }
 
     /*
-    *  If you're dynamically adding new fields/inputs, and would like to track 
+    *  If you're dynamically adding new fields/inputs, and would like to track
     *  their state, trigger isDirtyForm to rescan the form like this:
     */
     $("#my-form").trigger("rescan.isDirtyForm");
 
     /*
-    *  If you'd like to reset/reinitialize the form's state as clean and 
+    *  If you'd like to reset/reinitialize the form's state as clean and
     *  start tracking again from this new point onwards, trigger the
     *  reinitialize as follows. This is handy if say you've managing your
     *  own form save/submit via AJAX.
@@ -131,19 +131,19 @@ $(function() {
     *  but update nothing else. This should mark the form as dirty.
     */
     $("form").isDirtyForm( {"addRemoveFieldsMarksDirty":true} );
-    
+
     /*
     *  Sometimes you may have advanced forms that change their state via
-    *  custom JavaScript or 3rd-party component JavaScript. isDirtyForm may 
+    *  custom JavaScript or 3rd-party component JavaScript. isDirtyForm may
     *  not automatically detect these state changes. Examples include:
     *     - Updating a hidden input field via background JS.
     *     - Using a rich WYSIWYG edit control.
     *  One solution is to manually trigger a form check as follows:
     */
     $("#my-form").trigger("checkForm.isDirtyForm");
-	
+
     /*
-    *  As an alternative to using events, you can pass in a custom change 
+    *  As an alternative to using events, you can pass in a custom change
     *  function.
     */
     $("#my-adv-form").isDirtyForm({
@@ -167,7 +167,7 @@ $(function() {
             return "Because it's Sunday, I'll be nice and let you know you forgot to save!";
         }
     }
-    
+
 }
 ```
 The [demo page](http://127.0.0.1:8500/jquery-isDirtyForm/demo/)
@@ -175,12 +175,12 @@ shows the advanced usage options in more detail.
 
 
 ###Install
-isDirtyForm is a light-weight jQuery plugin - it's a single standalone 
-JavaScript file. You can download the 
+isDirtyForm is a light-weight jQuery plugin - it's a single standalone
+JavaScript file. You can download the
 [jquery.isDirtyForm.js](http://127.0.0.1:8500/jquery-isDirtyForm/demo/assets/scripts/jquery.isDirtyForm.js)
-file and include it in your page. Because it's so simple it seems a shame 
+file and include it in your page. Because it's so simple it seems a shame
 to add an extra browser round trip. It's recommended that you consider
-concatenating it with other common JS lib files, and/or even cut-n-pasting 
+concatenating it with other common JS lib files, and/or even cut-n-pasting
 the code (and license header) into one of your existing JS files.
 
 
@@ -206,8 +206,8 @@ The ```windows.beforeunload``` event is not supported on iOS (iPhone, iPad, and 
 The custom message option may not work on Firefox ([Firefox bug 588292](https://bugzilla.mozilla.org/show_bug.cgi?id=588292)).
 
 ###Development
-The aim is to keep *isDirtyForm* simple and light. If you think you have 
-a good idea which is aligned with this objective, please voice your thoughts 
+The aim is to keep *isDirtyForm* simple and light. If you think you have
+a good idea which is aligned with this objective, please voice your thoughts
 in the issues list.
 
 
@@ -221,4 +221,4 @@ jQuery version 1.4.2 or higher. 1.10+ or 2.0+ recommended.
 
 
 ###License
-The same as JQuery.
+This project is released under the MIT License. See [LICENSE.txt](https://raw.githubusercontent.com/ecivis/jquery.isdirtyform/master/LICENSE.txt).
