@@ -1,12 +1,11 @@
 /*!
  * jQuery Plugin: isDirtyForm (Dirty Form Detection)
- * https://github.com/sbeauvais/jquery.isDirtyForm/
+ * https://github.com/ecivis/jquery.isDirtyForm/
  *
- * Copyright (c) 2014
+ * Copyright 2014 eCivis, Inc. https://ecivis.com
+ * Released under the MIT License
+ *
  * Created: September 1, 2014
- * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://jquery.org/license
- *
  * Author:  Steve Beauvais
  * Version: 1.0.0
  * Date:    October 24, 2014
